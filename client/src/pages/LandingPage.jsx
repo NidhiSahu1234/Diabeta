@@ -1,9 +1,19 @@
+import Navbar from "../components/layout/Navbar";
+import Hero from "../components/landing/Hero";
+import Features from "../components/landing/Features";
+import DashboardPreview from "../components/landing/DashboardPreview";
+import AISection from "../components/landing/AISection";
+import Footer from "../components/layout/Footer";
+
 function LandingPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-teal-600">
-        🌸 Welcome to DiaBeta AI
-      </h1>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <Hero />
+      <Features />
+      <DashboardPreview />
+      <AISection />
+      <Footer/>
     </div>
   );
 }
